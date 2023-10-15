@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(22, 18, 18, 0.797);
+}
+body .animation-wrapper {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+body .animation-wrapper .animation {
+  margin-top: 10vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .animation-wrapper .animation .hero {
+  width: 100%;
+  height: 0px;
+}
+body .animation-wrapper .animation .hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .animation-wrapper .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(125, 125, 125), black);
+  z-index: -1;
+}
+body nav {
+  box-shadow: 0px 0px 5px rgb(37, 7, 7);
+  height: 70px;
+  padding-left: 1rem;
+}
+body nav ul {
+  height: 100%;
+  align-items: center;
+  color: white;
+  display: flex;
+  list-style: none;
+}
+body nav ul li {
+  margin: 2px 5px;
+  font-size: 24px;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+body nav ul li a:hover {
+  color: rgba(221, 221, 115, 0.929);
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main h1 {
+  margin: 2rem;
+  color: aliceblue;
+}
+body main .sortbtn button {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  margin-right: 0.4rem;
+  padding: 0.3rem;
+}
+body main form input {
+  font-size: 20px;
+  margin: 5px;
+  padding: 0.3rem;
+}
+body main form select {
+  font-size: 20px;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+}
+body main form .trash {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-style: none;
+  background-color: rgba(22, 18, 18, 0);
+  cursor: pointer;
+}
+body main form .trash i {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+body main #plus-btn {
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  border-style: none;
+  margin: 3rem 0rem;
+}
+body main #calGrade {
+  width: 150px;
+  height: 150px;
+  border: 3px solid red;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+  animation-name: border_color;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+body main #calGrade p {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 22px;
+}
+body main #calGrade h2 {
+  font-size: 32px;
+}
+
+.remove {
+  transform: scale(0);
+  transition: 0.5s ease;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes border_color {
+  0% {
+    border-color: rgb(236, 75, 75);
+  }
+  33% {
+    border-color: rgb(246, 246, 131);
+  }
+  66% {
+    border-color: rgb(125, 207, 125);
+  }
+  100% {
+    border-color: rgb(113, 153, 245);
+  }
+}/*# sourceMappingURL=style.css.map */

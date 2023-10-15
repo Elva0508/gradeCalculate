@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>成績計算網站</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2997ef88f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 開場動畫 -->
+    <section class="animation-wrapper">
+      <section class="animation">
+        <div class="hero">
+          <img
+            src="https://news.harvard.edu/wp-content/uploads/2022/11/iStock-mathproblems-1200x800.jpg"
+            alt="動畫圖片"
+          />
+        </div>
+      </section>
+      <section class="slider"></section>
+    </section>
+    <nav>
+      <ul class="nav">
+        <li><a href="#">GPA計算機</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>總學分數計算</h1>
+      <section class="sortbtn">
+        <button class="descending">降冪排列</button>
+        <button class="ascending">升冪排列</button>
+      </section>
+      <section class="allForm">
+        <form>
+          <input list="classOpt" type="text" placeholder="課程類別" /><!--
+--><input type="text" placeholder="課程名稱" /><!--
+--><input
+            type="number"
+            class="credits"
+            min="0"
+            max="8"
+            placeholder="學分"
+          /><!--
+--><select name="計算機" class="select">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+            <option value="D-">D-</option>
+            <option value="F">F</option></select
+          ><!--
+        --><button class="trash"><i class="fa-solid fa-trash"></i></button>
+        </form>
+        <form>
+          <input list="classOpt" type="text" placeholder="課程類別" /><!--
+--><input type="text" placeholder="課程名稱" /><!--
+--><input
+            type="number"
+            class="credits"
+            min="0"
+            max="8"
+            placeholder="學分"
+          /><!--
+--><select name="計算機" class="select">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+            <option value="D-">D-</option>
+            <option value="F">F</option></select
+          ><!--
+        --><button class="trash"><i class="fa-solid fa-trash"></i></button>
+        </form>
+        <form>
+          <input list="classOpt" type="text" placeholder="課程類別" /><!--
+--><input type="text" placeholder="課程名稱" /><!--
+--><input
+            type="number"
+            class="credits"
+            min="0"
+            max="8"
+            placeholder="學分"
+          /><!--
+--><select name="計算機" class="select">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+            <option value="D-">D-</option>
+            <option value="F">F</option></select
+          ><!--
+        --><button class="trash"><i class="fa-solid fa-trash"></i></button>
+        </form>
+      </section>
+
+      <button id="plus-btn" type="button" class="plus-btt">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <section id="calGrade">
+        <p>學期成績為：</p>
+        <h2 id="resultGpa">0.00</h2>
+      </section>
+    </main>
+    <datalist id="classOpt">
+      <option value="ACCT">會計學 (Accounting)</option>
+      <option value="ART">藝術 (Art)</option>
+      <option value="BUSM">商業管理 (Business Management)</option>
+      <option value="CHEM">化學 (Chemistry)</option>
+      <option value="CHIN">中文 (Chinese)</option>
+      <option value="WLNG">外文(World Language)</option>
+      <option value="CIS">
+        電腦與資訊科學 (Computer & Information Sciences)
+      </option>
+      <option value="CRMJ">刑事司法 (Criminal Justice)</option>
+      <option value="ECON">經濟學 (Economics)</option>
+      <option value="EDU">教育學 (Education)</option>
+      <option value="COMM">傳播學 (Communication Studies)</option>
+      <option value="ANTH">人類學 (Anthropology)</option>
+      <option value="BIOL">生物科學 (Biological Science)</option>
+      <option value="CRDEV">職涯發展 (Career Development)</option>
+      <option value="CS">計算機科學 (Computer Science)</option>
+      <option value="ELED">小學教育 (Elementary Education)</option>
+      <option value="EMGT">緊急管理 (Emergency Management)</option>
+      <option value="ENGL">英語(English)</option>
+      <option value="EIL">國際英語 (English as International Language)</option>
+      <option value="ENTR">創業 (Entrepreneurship)</option>
+      <option value="EXS">運動科學 (Exercise Sport Science)</option>
+      <option value="FILM">電影 (Film)</option>
+      <option value="FIN">金融 (Finance)</option>
+      <option value="FORS">法醫科學 (Forensic Science)</option>
+      <option value="FREN">法語 (French)</option>
+      <option value="GEOG">地理學 (Geography)</option>
+      <option value="HAWN">夏威夷語 (Hawaiian)</option>
+      <option value="HWST">夏威夷研究 (Hawaiian Studies)</option>
+      <option value="HLTH">健康 (Health)</option>
+      <option value="HIST">歷史 (History)</option>
+      <option value="HEC">家政 (Home Economics)</option>
+      <option value="HTM">
+        酒店與旅遊管理 (Hospitality Tourism Management)
+      </option>
+      <option value="HUM">人文學 (Humanities)</option>
+      <option value="IS">資訊系統 (Information System)</option>
+      <option value="IT">資訊科技 (Information Technology)</option>
+      <option value="ICS">國際文化研究 (International Cultural Studies)</option>
+      <option value="IPB">跨文化和平建設 (Intercultural Peacebuilding)</option>
+      <option value="JPN">日語 (Japanese)</option>
+      <option value="LING">語言學 (Linguistics)</option>
+      <option value="AMOR">毛利語 (Maori)</option>
+      <option value="MATH">數學 (Mathematics)</option>
+      <option value="MUSC">音樂 (Music)</option>
+      <option value="OCEN">海洋學 (Oceanography)</option>
+      <option value="PAIS">太平洋島嶼研究 (Pacific Island Studies)</option>
+      <option value="PHSC">物理科學 (Physical Science)</option>
+      <option value="POSC">政治學 (Political Science)</option>
+      <option value="PSYC">心理學 (Psychology)</option>
+      <option value="PMGT">公共管理 (Public Management)</option>
+      <option value="REL">宗教 (Religion)</option>
+      <option value="SCI">科學 (Science)</option>
+      <option value="SAMN">薩摩亞語 (Samoan)</option>
+      <option value="SCED">中學教育 (Secondary Education)</option>
+      <option value="SOCW">社會工作 (Social Work)</option>
+      <option value="SPAN">西班牙語 (Spanish)</option>
+      <option value="SPED">特殊教育 (Special Education)</option>
+      <option value="STDEV">學生發展 (Student Development)</option>
+      <option value="TESOL">對非英語人士教英語 (TESOL)</option>
+      <option value="THEA">戲劇 (Theatre)</option>
+      <option value="TONG">湯加語 (Tongan)</option>
+    </datalist>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./score.js"></script>
+  </body>
+</html>
